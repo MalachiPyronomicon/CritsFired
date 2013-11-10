@@ -7,6 +7,7 @@
 //
 // * Changelog (date/version/description):
 // * 2013-10-15	-	0.1.1		-	initial test version
+// * 2013-11-09	-	0.1.2		-	return plugin changed
 //	------------------------------------------------------------------------------------
 
 
@@ -23,7 +24,7 @@
 // DEFINES
 
 // Plugin Info
-#define PLUGIN_INFO_VERSION			"0.1.1"
+#define PLUGIN_INFO_VERSION			"0.1.2"
 #define PLUGIN_INFO_NAME			"Donator Crits Fired"
 #define PLUGIN_INFO_AUTHOR			"Malachi"
 #define PLUGIN_INFO_DESCRIPTION		"Allows donators to not fire crits"
@@ -228,7 +229,7 @@ public Action:TF2_CalcIsAttackCritical(iClient, weapon, String:weaponname[], &bo
 	else
 	{
 		bResult = false;
-		return Plugin_Handled;
+		return Plugin_Changed;
 	}
 }
 
